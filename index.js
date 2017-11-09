@@ -1,7 +1,6 @@
 function bfs(rootNode, vertices, edges) {
   rootNode.distance = 0
-  let queue = []
-  queue.push(rootNode)
+  let queue = [rootNode]
   let discovered = [rootNode]
   while (queue.length > 0) {
     let currentNode = queue.shift()
